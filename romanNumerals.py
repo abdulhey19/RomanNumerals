@@ -29,7 +29,7 @@ def romanConvertToInteger(sayi):
                  #burada kontrol ile sayının önündeki sayıdan büyük olması toplama yap demek...
                  result += nums1
              else:
-                 if nums2/nums1 <= 10:
+                 if nums2/nums1 == 10 or nums2/nums1 == 5:
                      result -= nums1
                  else:
                      raise ValueError()
@@ -40,3 +40,5 @@ def romanConvertToInteger(sayi):
         result = "Romen rakamlarının dizilimi yanlış..."
 
     return result
+
+
